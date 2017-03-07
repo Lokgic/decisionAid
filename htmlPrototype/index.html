@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="./js/d3.min.js"></script>
+    <script src="./js/jquery-3.1.1.slim.min.js"></script>
+    <script src="./js/d3-legend.min.js"></script>
+    <script src="./js/animation.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="sticky">
+
+    </div>
+
+
+
+    <div class="jumbotron jumbotron-fluid  bgcolor3">
+        <div class=" text-xs-center" id="jimbo">
+            <blockquote class="blockquote" id="quote">
+                <h3 id="whatIs">What is</h3>
+                <h1 id="DCIS">DCIS?</h1> </blockquote>
+        </div>
+    </div>
+
+    <div class="container-fluid row" id='slide1'>
+        <div class="col-md-6 m-x-0">
+            <div class="slide">
+                <div class="slidebox">
+                    <p id="p2">DCIS is a condition of the milk ducts in the breast.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 m-x-0">
+            <div class='slide'>
+                <img src="./src/dcis.png" id="dcisPic">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bgcolor2 row" id='slide2'>
+
+
+        <div class="col-md-6 m-x-0">
+            <div class="slide">
+                <div class="slidebox">
+                    <p class="frag">DCIS is not cancer.</p>
+                    <p>However, it does increase your risk of getting breast cancer in the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 m-x-0">
+            <div class='slide'>
+                <div class='slidebox'>
+                    <p  id="dcis1">DCIS &ne; &nbsp;Cancer</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid row" id="slide3">
+        <div class="col-md-6 m-x-0" id='decisionTreeLeft'>
+            <div class="slide">
+                <div class="slidebox">
+                    <p id='p3'>To reduce the risk of breast cancer in the future, there are several options to choose from.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 m-x-0" id='question' style="background-image: url('./src/question.png');background-repeat:no-repeat;background-size: 70% auto;background-position:center center">
+            <!-- <div class='slide'>
+          <img src = "./src/question.png" id = "question">
+        </div> -->
+        </div>
+    </div>
+
+    <div class="container-fluid row" id='slide4'>
+        <div class="col-md-6 m-x-0">
+            <div class="slide">
+                <div class="slidebox">
+                    <p>Before we get there, it is very important to know that DCIS does not turn into cancer overnight</p>
+                    <p>You have time to learn about the different options and take a decision that feels right for you!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 m-x-0">
+            <div class='slide'>
+                <img src="./src/time.png" id="timePic">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid row bgcolor3" id="slide5">
+        <div class="col-md-6 m-x-0" id='slide5Left'>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>There are two main options. You can choose to undergo surgery right away. Or you can choose to monitor your DCIS instead; this is called active surveillance.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 m-x-0" id='decisionTree2'>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid row bgcolor3" id="slide6">
+        <div class="col-md-6 m-x-0" class='decisionTreeLeft2'>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>If you choose to undergo surgery, you can choose between breast-conserving surgery (Lx), and removal of the entire breast (Mx)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container-fluid row bgcolor3" id="slide7">
+        <div class="col-md-6 m-x-0" class='decisionTreeLeft2'>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>In the case of breast breast conserving surgery (Lx), you can choose to undergo additional radiation treatment (Rx).</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid row bgcolor3" id="slide8">
+        <div class="col-md-6 m-x-0" id='lastTree'>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>Hover on any of the options to learn more about the procedure.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid row" id='slide9'>
+        <div class="col-md-6 m-x-0">
+            <div class="slide">
+                <div class="slidebox">
+                    <p id="p9a">Each of these options has its pros and cons. </p>
+
+                    <p id="p9b">Ultimately you have to take a decision that feels right for you you.</p>
+
+                    <p id="p9c">Next, we are going to look at some of the trade-offs between the different options
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 m-x-0">
+            <div class='slide'>
+                <img src="./src/rock.png" id="rockPic">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid row bgcolor1" id="slide10">
+        <div class="col-md-6 m-x-0" id='barTree'>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>First, let’s look at the risk of breast cancer in the next 10 years (in the same breast as the DCIS was diagnosed). </p>
+                    <p>Out of 100 women, the estimated number of individuals with a cancer diagnosis is as follows:</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-md-6 m-x-0" id='barRight'></div>
+    </div>
+
+    <div class="container-fluid row" id="slide11">
+        <div class="col-md-12 m-x-0" id='barTree'>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>Next, let’s look at the number of surgeries you are likely to undergo for each option. </p>
+                    <p>For 100 women, the number of surgeries are as follows:</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container-fluid row bgcolor3" id="slide12">
+        <div class="col-md-6 m-x-0">
+            <div class="slide">
+                <div class="slidebox">
+                    <p>Mastectomy:</p>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-md-6 m-x-0" id='bar2Right'></div>
+    </div>
+
+
+    <div class="container-fluid row bgcolor1" id="slide13">
+        <div class="col-md-6 m-x-0">
+            <div class="slide">
+                <div class="slidebox">
+                    <p>BCS with radiation:</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid row bgcolor2" id="slide14">
+        <div class="col-md-6 m-x-0" id=''>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>BCS without radiation:</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid row bgcolor4" id="slide15">
+        <div class="col-md-6 m-x-0" id=''>
+            <div class="slide">
+                <div class="slidebox">
+                    <p>Active Surveillance:</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid row bgcolor3" id="slide16">
+        <div class="col-md-6 m-x-0" id=''>
+            <div class="slide">
+                <div class="slidebox">
+                  <p>We all have to die someday... </p>
+                  <p>Let’s look at your risk of dying from breast cancer as opposed to death from a cancer-unrelated cause, such as heart attack, a car accident, etc.</p>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio" checked data = "mas">Mastectomy<label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio" data = "bcsRx">BCS with radiation</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio" data="bcs">BCS without radiation</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio" data="active">Active Surveillance</label>
+                  </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="col-md-6 m-x-0" id='bar3Right'></div>
+
+
+    </div>
+
+
+
+
+</body>
