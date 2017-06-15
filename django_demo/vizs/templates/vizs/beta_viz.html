@@ -1,0 +1,21 @@
+{% load static from staticfiles %}
+
+<!doctype html>
+<html>
+  <head>
+    <script
+  src="{%static 'js/jquery-3.2.1.min.js' %}"   crossorigin="anonymous"></script>
+  <script
+src="{%static 'js/d3.min.js' %}"   crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'css/beta.css'%}">
+    <title>Visualizing Beta</title>
+  </head>
+  <body>
+    <div id = "main_div">
+      <div id ="sequence">
+      </div>
+    </div>
+    <button id="button" type="button">Click Me!</button>
+  </body>
+  <footer><script src="{%static 'js/draw_beta.js' %}"   crossorigin="anonymous"></script></footer>
+</html>
