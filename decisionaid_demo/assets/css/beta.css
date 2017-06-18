@@ -1,7 +1,9 @@
 #main_div {
   display: flex;
+  padding-top: 10%;
 }
 
 #sequence {
   margin:auto;
+  background-color: white
 }
